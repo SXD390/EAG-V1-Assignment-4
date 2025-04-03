@@ -209,7 +209,7 @@ Your entire response should be a single line starting with either FUNCTION_CALL:
                         current_query = query
                     else:
                         current_query = current_query + "\n\n" + " ".join(iteration_response)
-                        current_query = current_query + "  What should I do next?"
+                        current_query = current_query + "  What function to call next?"
 
                     # Get model's response with timeout
                     print("Preparing to generate LLM response...")
@@ -274,7 +274,7 @@ Your entire response should be a single line starting with either FUNCTION_CALL:
                             print(f"Calling {func_name} with arguments: {arguments}")
                             
                             result = await session_to_use.call_tool(func_name, arguments=arguments)
-                            
+                            print(f"Tool's response: {result}")
                             # Get the full result content
                             if hasattr(result, 'content'):
                                 if isinstance(result.content, list):
