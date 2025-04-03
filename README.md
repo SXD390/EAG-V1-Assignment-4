@@ -1,5 +1,5 @@
-# AI-Powered Indian Flag Drawing and Email System
-
+# LLM-MCP-Powered ASCII calculator | Indian Flag Drawing and Email System
+Note: This project is a simple demonstration of MCP which combines primitive math, MSPaint and Gmail functions. None of these functions are meant to be used together for production systems, they are used together as this is just a demo.
 This project demonstrates an intelligent system that combines mathematical calculations, artistic drawing capabilities, and email communication using AI. The system uses Google's Gemini AI model to orchestrate a sequence of operations that include calculating ASCII values, drawing the Indian flag, and sending the result via email.
 
 ## Features
