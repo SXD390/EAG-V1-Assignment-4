@@ -20,15 +20,12 @@ This project demonstrates an intelligent system that combines mathematical calcu
 ## Project Structure
 
 ```
-ai-flag-drawing/
-├── Assignment/
-│   ├── MCP_Server.py      # Calculator and Paint operations server
-│   ├── Gmail_MCP_Server.py # Gmail operations server
-│   ├── MCP_Client.py      # Main client orchestrating all operations
-│   └── drawing_test.py    # Test script for flag drawing
-├── credentials.json       # Gmail API credentials
+ROOT/
+├── MCP_Server.py      # Calculator and Paint operations server
+├── Gmail_MCP_Server.py # Gmail operations server
+├── MCP_Client.py      # Main client orchestrating all operations
+├── credentials.json       # Gmail API credentials(need to fetch via GCP)
 ├── token.json            # Gmail API token (generated on first run)
-├── requirements.txt      # Project dependencies
 └── README.md            # This file
 ```
 
